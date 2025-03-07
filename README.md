@@ -1,4 +1,4 @@
-- 👋 Hi, I’m Walz @GreenRanger-IT: a Site Reliability Engineer with extensive experience in DevOps, Platform engineering, Kubernetes. I provision, monitor and manage cloud based plaforms inform. I love Terraform,Kubernetes.
+- 👋 Hi, I’m Walz @GreenRanger-IT: a Site Reliability Engineer with extensive experience in DevOps, Platform engineering, Kubernetes. I provision, monitor and manage cloud based plaforms. I love Terraform and Kubernetes.
 - 👀 I’m interested in DevOps, Infrastructure provisioning/management and Solutions Architecture.
 - 📫 How to reach me via LinkedIn (www.linkedin.com/in/olawale-philips-ogundiran) and email (waleogundiran29@gmail.com)
 
