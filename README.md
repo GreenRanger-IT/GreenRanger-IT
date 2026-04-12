@@ -37,8 +37,8 @@ AI-assisted SRE tooling — deterministic CLI tools paired with Claude Code reas
 
 | Project | Description | Status |
 |---------|-------------|--------|
-| **[kubectl-sentinel](https://github.com/GreenerPlatform/kubectl-sentinel)** | 10-section Kubernetes health checker. Nodes, pods, workloads, probes, services, HPAs, PVCs. Structured JSON + HTML output. Works in CI. | Coming soon |
-| **[incident-triage](https://github.com/GreenerPlatform/incident-triage)** | PagerDuty alert → root cause → causation chain → fix plan. Deterministic correlation engine. Python stdlib only. | Coming soon |
+| **[kubectl-sentinel](https://github.com/GreenerPlatform/kubectl-sentinel)** | 10-section Kubernetes health checker. Nodes, pods, workloads, probes, services, HPAs, PVCs. Structured JSON + HTML output. Works in CI. | ![active](https://img.shields.io/badge/status-active-brightgreen?style=flat-square) |
+| **[incident-triage](https://github.com/GreenerPlatform/incident-triage)** | PagerDuty alert → root cause → causation chain → fix plan. Deterministic correlation engine. Python stdlib only. | ![active](https://img.shields.io/badge/status-active-brightgreen?style=flat-square) |
 
 ---
 
@@ -62,7 +62,7 @@ AI-assisted Tooling         ████████████░░░░░�
 - **Classify before you recommend** — OOMKill does not mean "raise the limit". The root cause determines the fix.
 - **Building for the 3am reader** — every design decision in an ops tool should be made as if the reader has been awake for 3 hours and needs to act in 5 minutes.
 
-→ [GreenerPlatform/learning-journal](https://github.com/GreenerPlatform/learning-journal) — architecture decisions and engineering thinking from building production SRE tooling
+→ [GreenRanger-IT/learning-journal](https://github.com/GreenRanger-IT/learning-journal) — architecture decisions and engineering thinking from building production SRE tooling
 
 ---
 
