@@ -29,7 +29,8 @@ seismic interpretation and subsurface planning tools for energy companies in pro
 Europe, the Americas, and Asia-Pacific.
 
 I build tooling that makes Kubernetes observable and incidents shorter. My current focus is
-AI-assisted SRE tooling — deterministic CLI tools paired with Claude Code reasoning skills.
+AI-assisted SRE tooling — deterministic CLI tools an agent can reason over (via MCP),
+never guessing at cluster state.
 
 ---
 
@@ -37,8 +38,9 @@ AI-assisted SRE tooling — deterministic CLI tools paired with Claude Code reas
 
 | Project | Description | Status |
 |---------|-------------|--------|
-| **[kubectl-sentinel](https://github.com/GreenerPlatform/kubectl-sentinel)** | 10-section Kubernetes health checker. Nodes, pods, workloads, probes, services, HPAs, PVCs. Structured JSON + HTML output. Works in CI. | ![active](https://img.shields.io/badge/status-active-brightgreen?style=flat-square) |
-| **[incident-triage](https://github.com/GreenerPlatform/incident-triage)** | PagerDuty alert → root cause → causation chain → fix plan. Deterministic correlation engine. Python stdlib only. | ![active](https://img.shields.io/badge/status-active-brightgreen?style=flat-square) |
+| **[kubectl-sentinel](https://github.com/GreenerPlatform/kubectl-sentinel)** | Kubernetes health snapshot across 15 dimensions, severity-ranked, with a fix command on every finding. JSON / text / HTML. Works in CI. | ![active](https://img.shields.io/badge/status-active-brightgreen?style=flat-square) |
+| **[incident-triage](https://github.com/GreenerPlatform/incident-triage)** | Alert → root cause → causation chain → prioritized fix plan. Deterministic correlation engine. Python, stdlib only. | ![active](https://img.shields.io/badge/status-active-brightgreen?style=flat-square) |
+| **[greenerplatform-mcp](https://github.com/GreenerPlatform/greenerplatform-mcp)** | MCP server exposing both tools to any AI agent (Cursor, Claude, VS Code). Vendor-neutral. | ![active](https://img.shields.io/badge/status-active-brightgreen?style=flat-square) |
 
 ---
 
@@ -65,10 +67,10 @@ AI-assisted Tooling         ████████████░░░░░�
 
 ### What I've learnt building production SRE tooling
 
-- **The dual-layer pattern** — a deterministic CLI layer that works at 3am in CI, paired with an AI reasoning layer that explains *why*. Separating them gives you both portability and intelligence.
+- **The dual-layer pattern** — a deterministic CLI layer that runs in CI with no internet, paired with an AI reasoning layer that explains *why*. Separating them gives you both portability and intelligence.
 - **Severity as an exit code** — `0/1/2` makes health checkers CI-composable. Think of them as HTTP status codes for shell tools.
 - **Classify before you recommend** — OOMKill does not mean "raise the limit". The root cause determines the fix.
-- **Building for the 3am reader** — every design decision in an ops tool should be made as if the reader has been awake for 3 hours and needs to act in 5 minutes.
+- **Evidence before reasoning** — the AI is only as trustworthy as the facts under it. Establish cluster state deterministically first, then let the model reason within those bounds.
 
 → [GreenRanger-IT/learning-journal](https://github.com/GreenRanger-IT/learning-journal) — architecture decisions and engineering thinking from building production SRE tooling
 
