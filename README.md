@@ -48,7 +48,7 @@ never guessing at cluster state.
 
 | Project | Contribution | Status |
 |---------|-------------|--------|
-| **[percona-server-mongodb-operator](https://github.com/percona/percona-server-mongodb-operator/pull/2415)** | Inject a writable `/tmp` emptyDir for the mongod and backup-agent containers so `readOnlyRootFilesystem: true` works without CrashLoopBackOff. Version-gated, unit-tested. Addresses [#1793](https://github.com/percona/percona-server-mongodb-operator/issues/1793). | ![open](https://img.shields.io/badge/PR-open-blue?style=flat-square) |
+| **[percona-server-mongodb-operator](https://github.com/percona/percona-server-mongodb-operator/pull/2415)** | Inject a writable `/tmp` emptyDir for the mongod and backup-agent containers so `readOnlyRootFilesystem: true` works without CrashLoopBackOff. Version-gated, unit-tested. Addresses [#1793](https://github.com/percona/percona-server-mongodb-operator/issues/1793). | ![merged](https://img.shields.io/badge/PR-merged-8957e5?style=flat-square&logo=github&logoColor=white) |
 
 ---
 
