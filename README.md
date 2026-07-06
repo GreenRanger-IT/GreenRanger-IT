@@ -85,7 +85,7 @@ AI-assisted Tooling         ████████████░░░░░�
 ---
 
 <p align="center">
-  <em>Working toward CKA → CKS → CNCF contributor. Open to collaborating on Kubernetes observability and platform engineering tooling.</em>
+  <em>Building open-source reliability tooling for Kubernetes — deterministic diagnostics an AI agent can trust. Open to collaborating on observability, incident response, and platform engineering.</em>
 </p>
 
 <p align="center">
