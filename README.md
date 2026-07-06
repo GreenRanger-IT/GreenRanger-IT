@@ -2,7 +2,7 @@
 
 <p align="center">
   <em>Senior SRE & Platform Engineer — Kubernetes Observability, AI-assisted Tooling & Cloud Operations</em><br/>
-  <sub>Abingdon-on-Thames, United Kingdom</sub>
+  <sub>Oxford, United Kingdom</sub>
 </p>
 
 <p align="center">
@@ -24,9 +24,8 @@
 
 ---
 
-5 years in site reliability and platform engineering, working on the platform that runs
-seismic interpretation and subsurface planning tools for energy companies in production across
-Europe, the Americas, and Asia-Pacific.
+5 years in site reliability and platform engineering, working on a production platform that
+serves enterprise customers across Europe, the Americas, and Asia-Pacific.
 
 I build tooling that makes Kubernetes observable and incidents shorter. My current focus is
 AI-assisted SRE tooling — deterministic CLI tools an agent can reason over (via MCP),
@@ -41,6 +40,15 @@ never guessing at cluster state.
 | **[kubectl-sentinel](https://github.com/GreenerPlatform/kubectl-sentinel)** | Kubernetes health snapshot across 15 dimensions, severity-ranked, with a fix command on every finding. JSON / text / HTML. Works in CI. | ![active](https://img.shields.io/badge/status-active-brightgreen?style=flat-square) |
 | **[incident-triage](https://github.com/GreenerPlatform/incident-triage)** | Alert → root cause → causation chain → prioritized fix plan. Deterministic correlation engine. Python, stdlib only. | ![active](https://img.shields.io/badge/status-active-brightgreen?style=flat-square) |
 | **[greenerplatform-mcp](https://github.com/GreenerPlatform/greenerplatform-mcp)** | MCP server exposing both tools to any AI agent (Cursor, Claude, VS Code). Vendor-neutral. | ![active](https://img.shields.io/badge/status-active-brightgreen?style=flat-square) |
+
+---
+
+### Writing
+
+**[AI Reliability Principles](https://www.linkedin.com/company/ai-reliability-principles/)** — a growing series on making AI dependable enough to trust with real operational decisions. It starts with deterministic-first — establish the facts, then let capable models reason over them — and adds principles as the work teaches them.
+
+- Latest: [*Your AI is smart. Reliability needs it to be consistent.*](https://olawaleogundiran.medium.com/your-ai-is-smart-reliability-needs-it-to-be-consistent-496910033f0f) on Medium
+- Follow the series on [LinkedIn](https://www.linkedin.com/company/ai-reliability-principles/) · all posts on [Medium](https://olawaleogundiran.medium.com)
 
 ---
 
