@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/profile-hero-v2.png" alt="Olawale “Walz” Ogundiran — engineering reliable systems" width="100%"/>
+</p>
+
 <h1 align="center">Walz Ogundiran</h1>
 
 <p align="center">
@@ -28,8 +32,8 @@
 serves enterprise customers across Europe, the Americas, and Asia-Pacific.
 
 I build tooling that makes Kubernetes observable and incidents shorter. My current focus is
-AI-assisted SRE tooling — deterministic CLI tools an agent can reason over (via MCP),
-never guessing at cluster state.
+AI-assisted SRE tooling — deterministic CLI tools that give agents inspectable cluster
+evidence to reason over through MCP.
 
 ---
 
@@ -37,9 +41,9 @@ never guessing at cluster state.
 
 | Project | Description | Status |
 |---------|-------------|--------|
-| **[kubectl-sentinel](https://github.com/GreenerPlatform/kubectl-sentinel)** | Kubernetes health snapshot across 15 dimensions, severity-ranked, with a fix command on every finding. JSON / text / HTML. Works in CI. | ![active](https://img.shields.io/badge/status-active-brightgreen?style=flat-square) |
-| **[incident-triage](https://github.com/GreenerPlatform/incident-triage)** | Alert → root cause → causation chain → prioritized fix plan. Deterministic correlation engine. Python, stdlib only. | ![active](https://img.shields.io/badge/status-active-brightgreen?style=flat-square) |
-| **[greenerplatform-mcp](https://github.com/GreenerPlatform/greenerplatform-mcp)** | MCP server exposing both tools to any AI agent (Cursor, Claude, VS Code). Vendor-neutral. | ![active](https://img.shields.io/badge/status-active-brightgreen?style=flat-square) |
+| **[kubectl-sentinel](https://github.com/GreenerPlatform/kubectl-sentinel)** | Point-in-time Kubernetes evidence across 15 health dimensions, with severity-ranked observations, provenance, and explicit collection status. Text, JSON, and HTML output. | ![active](https://img.shields.io/badge/status-active-brightgreen?style=flat-square) |
+| **[incident-triage](https://github.com/GreenerPlatform/incident-triage)** | Rule-based correlation of an alert with a sentinel report. Produces ranked candidate causes, evidence gaps, and response steps for operator review. Python, standard library only. | ![active](https://img.shields.io/badge/status-active-brightgreen?style=flat-square) |
+| **[greenerplatform-mcp](https://github.com/GreenerPlatform/greenerplatform-mcp)** | Thin MCP adapter that exposes both command-line tools to compatible hosts while leaving reasoning to the host agent. | ![active](https://img.shields.io/badge/status-active-brightgreen?style=flat-square) |
 
 ---
 
@@ -64,7 +68,7 @@ never guessing at cluster state.
 
 ```
 Kubernetes Observability    ██████████████████░░   Prometheus, Thanos, Grafana, Kiali, Istio
-Incident Response           █████████████████░░░   PagerDuty, causation chains, root cause classification
+Incident Response           █████████████████░░░   PagerDuty, evidence correlation, incident classification
 Platform Automation         ████████████████░░░░   Helm, ArgoCD, CI/CD pipelines, tenant provisioning
 Cloud Operations            ██████████████░░░░░░   GCP, Azure, multi-region, cost optimisation
 Security & Compliance       ████████████░░░░░░░░   RBAC, TLS, pod security, secrets hygiene
@@ -75,17 +79,17 @@ AI-assisted Tooling         ████████████░░░░░�
 
 ### What I've learnt building production SRE tooling
 
-- **The dual-layer pattern** — a deterministic CLI layer that runs in CI with no internet, paired with an AI reasoning layer that explains *why*. Separating them gives you both portability and intelligence.
+- **The dual-layer pattern** — a deterministic CLI layer that can run in CI, paired with an AI reasoning layer that explains *why*. Separating collection from reasoning improves portability and auditability.
 - **Severity as an exit code** — `0/1/2` makes health checkers CI-composable. Think of them as HTTP status codes for shell tools.
 - **Classify before you recommend** — OOMKill does not mean "raise the limit". The root cause determines the fix.
-- **Evidence before reasoning** — the AI is only as trustworthy as the facts under it. Establish cluster state deterministically first, then let the model reason within those bounds.
+- **Evidence before reasoning** — collect inspectable cluster observations first, preserve gaps and uncertainty, then let the model reason within those bounds.
 
 → [GreenRanger-IT/learning-journal](https://github.com/GreenRanger-IT/learning-journal) — architecture decisions and engineering thinking from building production SRE tooling
 
 ---
 
 <p align="center">
-  <em>Building open-source reliability tooling for Kubernetes — deterministic diagnostics an AI agent can trust. Open to collaborating on observability, incident response, and platform engineering.</em>
+  <em>Building open-source reliability tooling for Kubernetes — inspectable evidence for AI-assisted operations. Open to collaborating on observability, incident response, and platform engineering.</em>
 </p>
 
 <p align="center">
