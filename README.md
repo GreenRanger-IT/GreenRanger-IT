@@ -1,11 +1,7 @@
-<p align="center">
-  <img src="assets/profile-hero-v2.png" alt="Olawale “Walz” Ogundiran — engineering reliable systems" width="100%"/>
-</p>
-
 <h1 align="center">Walz Ogundiran</h1>
 
 <p align="center">
-  <em>Senior SRE & Platform Engineer — Kubernetes Observability, AI-assisted Tooling & Cloud Operations</em><br/>
+  <em>Senior Reliability &amp; Platform Engineer — Kubernetes, Observability, AI Systems &amp; Cloud Platforms</em><br/>
   <sub>Oxford, United Kingdom</sub>
 </p>
 
@@ -19,7 +15,7 @@
   <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white"/>
   <img src="https://img.shields.io/badge/GKE-4285F4?style=flat-square&logo=google-cloud&logoColor=white"/>
   <img src="https://img.shields.io/badge/AKS-0078D4?style=flat-square&logo=microsoft-azure&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white"/>
+  <img src="https://img.shields.io/badge/OpenTelemetry-000000?style=flat-square&logo=opentelemetry&logoColor=white"/>
   <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
   <img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white"/>
   <img src="https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white"/>
@@ -28,12 +24,16 @@
 
 ---
 
-5 years in site reliability and platform engineering, working on a production platform that
-serves enterprise customers across Europe, the Americas, and Asia-Pacific.
+Reliability and platform engineer with extensive experience designing and operating
+cloud-native platforms for enterprise workloads across Europe, the Americas, and
+Asia-Pacific. My work spans Kubernetes, observability and OpenTelemetry, incident
+response, platform automation, cloud operations, and security—using Go, Python,
+Terraform, GitOps, and telemetry to make complex systems easier to understand and operate.
 
-I build tooling that makes Kubernetes observable and incidents shorter. My current focus is
-AI-assisted SRE tooling — deterministic CLI tools that give agents inspectable cluster
-evidence to reason over through MCP.
+My current direction is dependable AI systems: system design, agentic observability,
+and evidence-grounded automation that makes AI-assisted operations auditable and safer
+to operate. I build solutions in the open, write as I learn, and turn useful experience
+into reusable tools and teaching.
 
 ---
 
@@ -64,32 +64,20 @@ evidence to reason over through MCP.
 
 ---
 
-### Domain Expertise
+### Engineering principles I build by
 
-```
-Kubernetes Observability    ██████████████████░░   Prometheus, Thanos, Grafana, Kiali, Istio
-Incident Response           █████████████████░░░   PagerDuty, evidence correlation, incident classification
-Platform Automation         ████████████████░░░░   Helm, ArgoCD, CI/CD pipelines, tenant provisioning
-Cloud Operations            ██████████████░░░░░░   GCP, Azure, multi-region, cost optimisation
-Security & Compliance       ████████████░░░░░░░░   RBAC, TLS, pod security, secrets hygiene
-AI-assisted Tooling         ████████████░░░░░░░░   Dual-layer CLI + LLM reasoning pattern (building)
-```
+- **Evidence before reasoning** — reliable decisions start with inspectable evidence, explicit gaps, and honest uncertainty.
+- **Operability is part of architecture** — instrumentation, failure modes, feedback loops, and rollback paths belong in system design from the start.
+- **Diagnose before automating** — symptoms, correlations, and causes are different; safe action requires classification, impact awareness, and reviewable next steps.
+- **Bound intelligence with deterministic controls** — AI can reason and adapt, while testable tools, policies, and evaluations define what it may trust and do.
+- **Build, write, teach** — shipping solutions and sharing the lessons turns individual experience into reusable capability.
 
----
-
-### What I've learnt building production SRE tooling
-
-- **The dual-layer pattern** — a deterministic CLI layer that can run in CI, paired with an AI reasoning layer that explains *why*. Separating collection from reasoning improves portability and auditability.
-- **Severity as an exit code** — `0/1/2` makes health checkers CI-composable. Think of them as HTTP status codes for shell tools.
-- **Classify before you recommend** — OOMKill does not mean "raise the limit". The root cause determines the fix.
-- **Evidence before reasoning** — collect inspectable cluster observations first, preserve gaps and uncertainty, then let the model reason within those bounds.
-
-→ [GreenRanger-IT/learning-journal](https://github.com/GreenRanger-IT/learning-journal) — architecture decisions and engineering thinking from building production SRE tooling
+→ [GreenRanger-IT/learning-journal](https://github.com/GreenRanger-IT/learning-journal) — system design, reliability, platform engineering, and building in public
 
 ---
 
 <p align="center">
-  <em>Building open-source reliability tooling for Kubernetes — inspectable evidence for AI-assisted operations. Open to collaborating on observability, incident response, and platform engineering.</em>
+  <em>Building dependable cloud and AI systems — observable by design, grounded in evidence, and engineered for safe operation. Open to collaborating on platform engineering, observability, and AI reliability.</em>
 </p>
 
 <p align="center">
